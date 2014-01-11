@@ -47,8 +47,10 @@ I've added a Makefile so that you can just type:
     $ make deploy
 
 Deploying to Heroku
-=================
-After you've checked that your Django project is working, you want to make sure that you can deploy to Heroku. To deploy via Heroku, you basically have to do 3 things:  install Heroku, and setup your Django project, and deploy using a ``git push heroku master``.
+===================
+After you've checked that your Django project is working, you want to make sure that you can 
+deploy to Heroku. To deploy via Heroku, you basically have to do 3 things:  
+install Heroku, and setup your Django project, and deploy using a ``git push heroku master``.
 
 Here are the steps in detail:
 
