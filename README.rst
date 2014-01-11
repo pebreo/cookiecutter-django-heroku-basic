@@ -2,8 +2,8 @@ What is Heroku?
 =============
 Heroku is a service that lets you deploy your web application by doing a ``git push`` command. You pay heroku to take care of security and deployment. It allows you to focus your time and energy on developing apps. Heroku's competitors are Engine Yard, Gondor, Cloud9, Nitrous.IO, Google App Engine and many more.
 
-How To Run
-==========
+Running the Django Project
+=====================
 Step 1. Install cookiecutter
 
     ``$ pip install cookiecutter``
@@ -69,15 +69,6 @@ Here are the steps in detail:
     git remote add heroku git@heroku.com:salty-shelf-8861.git 
     from django.conf import settings; settings.configure()
 
-**Shortcut for Deployment**
-I've added a Makefile so that you can just type:
-
-.. code:: bash
-
-    $ make build
-    $ make deploy
-
-
 A basic requirements.txt file should look like this:
 
 .. code:: bash
@@ -92,6 +83,16 @@ A basic requirements.txt file should look like this:
     static==0.4
     requests==1.2.3
     wsgiref==0.1.2
+
+Shortcut for Deployment
+=======================
+I've added a Makefile so that you can just type:
+
+.. code:: bash
+
+    $ make build
+    $ make deploy
+
 
 Links
 ========
