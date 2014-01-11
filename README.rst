@@ -1,6 +1,26 @@
 What is Heroku?
 =============
-Heroku is a service that lets you deploy your web application by doing a ``git push`` command. You pay heroku to take care of security and deployment. It allows you to focus your time and energy on developing apps. Heroku's competitors are Engine Yard, Gondor, Cloud9, Nitrous.IO, Google App Engine and many more.
+Heroku is a service that lets you deploy your web application by doing a ``git push`` command. 
+You pay Heroku to take care of running the servers and all that entails like maintaining uptime and worrying about security issues. 
+You pay a premium but it allows you to focus your time and energy on developing apps and marketing your products.
+Heroku's competitors are Engine Yard, Gondor, Cloud9, Nitrous.IO, Google App Engine and many more.
+
+What is Cookiecutter?
+=====================
+Cookiecutter is a command line utility that makes project templating easy. 
+It works by taking variables from a JSON file full of variables and filling them into Jinja 
+syntaxed variable names. The variables in the JSON can be for directory names, file names, 
+and file contents. 
+
+You can use Cookiecutter from a local cookiecutter project (CP) or remotely from a github repo. 
+But keep in mind that cookiecutter will copy the remote CP into your ``~/.cookiecutters`` directory, 
+so once you run cookiecutter on a remote repo, you only have to invoke the local copy.
+
+So instead of doing this:
+``cookiecutter git@github.com:myuserid/my-cp.git``
+
+You do this:
+``cookiecutter ~/.cookiecutter/my-cp.git``
 
 Quickstart
 =====================
